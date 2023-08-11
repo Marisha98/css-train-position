@@ -112,17 +112,44 @@ p {
 }
 
 .task8 .item2 {
-  position: absolute;
-
-  right: 1;
+  float: right;
 }
 
-.task8 .task p {
-  float: inline-end;
+.task8 .item1 {
+  float: left;
+}
+
+.task8 > p {
+  clear: right;
+}
+
+.task9 .item1 {
+  float: left;
+}
+
+.task9 .item2 {
+  float: right;
+}
+
+.task9 > p {
+  clear: right;
+}
+
+.task10 .item1 {
+  float: left;
+}
+
+.task10 .item2 {
+  float: right;
+  height: 200px;
+}
+
+.task10 > p {
+  clear: left;
 }
 
 .task11 .img-item {
-  object-fit: scale-down;
+  object-fit: contain;
 }
 
 .task12 .img-item {
@@ -166,9 +193,9 @@ p {
 }
 
 .task22 {
-  cursor: text;
+  caret-color: blue;
 }
-/* 
+
 html {
   scroll-behavior: smooth;
-} */
+}
